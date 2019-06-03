@@ -1,0 +1,19 @@
+body{
+  background:#ffec8d; 
+  text-align: center; 
+  font-family: 'Ubuntu', sans-serif;
+  color:#520100; 
+}
+
+.ol{
+  text-align: center; 
+  list-style-position: inside; 
+}
+
+h1{
+  color:#fe3c33; 
+}
+
+h2{
+  color:#fe3c33; 
+}

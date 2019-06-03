@@ -1,6 +1,7 @@
+<img src = "/assets/img/burger.jpg" alt = "burger" width = 300>
 <h1>Eat-Da-Burger!</h1>
-<h2>Burgers that are not devoured!</h2>
-<ol>
+<h2>You wanna devour a burger?</h2>
+<ol class = "ol">
   {{#each burgers}}
   {{#unless devoured}}
   {{>burgers/burger-block devoured = false}}
@@ -8,8 +9,8 @@
   {{/each}}
 </ol>
 
-<h2>Devour a burger!</h2>
-<ol>
+<h2>Burgers you've already devoured!</h2>
+<ol class = "ol">
 {{#each burgers}}
 {{#if devoured}}
   {{>burgers/burger-block devoured = true}}
@@ -17,7 +18,7 @@
 {{/each}}
 </ol>
 
-<textarea rows="5" cols="20" id ="addBurger"></textarea>
+<textarea rows="5" cols="30" id ="addBurger"></textarea>
 <br>
 <button type="submit" class = "submit-form">Submit</button>
-<p>Enter a burger you want to eat and click the "submit" button.</p>
+<p><i class="fas fa-lightbulb"></i>  Enter a burger you want to eat and click the "submit" button.</p>
