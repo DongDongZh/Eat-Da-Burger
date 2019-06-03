@@ -2,12 +2,22 @@
 <h2>Burgers that are not devoured!</h2>
 <ol>
   {{#each burgers}}
+  {{#unless devoured}}
+  {{>burgers/burger-block devoured = false}}
+  {{/unless}}
   {{/each}}
 </ol>
-<h2>Devour a burger!</h2>
-  {{#each burgers}}
-  {{/each}}
 
-<textarea rows="10" cols="10"></textarea>
-<button type = "submit">Submit</button>
+<h2>Devour a burger!</h2>
+<ol>
+{{#each burgers}}
+{{#if devoured}}
+  {{>burgers/burger-block devoured = true}}
+{{/if}}
+{{/each}}
+</ol>
+
+<textarea rows="5" cols="20" id ="addBurger"></textarea>
+<br>
+<button type="submit" class = "submit-form">Submit</button>
 <p>Enter a burger you want to eat and click the "submit" button.</p>
