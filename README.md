@@ -14,3 +14,9 @@ When users click on the button 'Devour it!', the burger will be moved to the bel
 Finally, users can enter a burger that they want to eat but not found in the "menu" section and click submit. And then the burger will show up in the "menu" section waiting to be devoured.  
 
 ![screen shot of the app](public/assets/img/SS3.png)
+
+### Deployed Link
+https://peaceful-journey-87025.herokuapp.com/
+
+### Contact Information
+General Inquires at ddzhang2018@gmail.com.
